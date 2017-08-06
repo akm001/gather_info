@@ -1,5 +1,6 @@
 # gather_info
-How to use arpscan.py
+
+# How to use arpscan.py
 arpscan.py is a simple arp scanner interactive script
 provide NIC name and IP , IP range or subnet to scan
 
