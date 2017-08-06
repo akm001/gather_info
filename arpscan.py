@@ -15,10 +15,10 @@ print "[*] Scanning.......\n"
 time1 = datetime.now()  # when the scan start
 
 conf.verb = 0  #Actually start scanning
-ans , unans = srp(Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(pdst=ips) , timeout=2 , iface=interface , inter=0.1)
+up , down = srp(Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(pdst=ips) , timeout=2 , iface=interface , inter=0.1)
 
 print "    MAC Address   - IP Address\n"
-for snd,rcv in ans:
+for snd,rcv in up:
     print rcv.sprintf(r"%Ether.src% - %ARP.psrc%")
 
 time2 = datetime.now()   # when the scan finished
