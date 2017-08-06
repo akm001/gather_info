@@ -1,10 +1,13 @@
 # gather_info
 
 # How to use arpscan.py
+
 arpscan.py is a simple arp scanner interactive script
+
 provide NIC name and IP , IP range or subnet to scan
 
-sudo python arpscan.py
+# sudo python arpscan.py
+
 sudo: unable to resolve host Thunder
 WARNING: No route found for IPv6 destination :: (no default route?)
 [*] Enter Desired Interface: enp0s25      
